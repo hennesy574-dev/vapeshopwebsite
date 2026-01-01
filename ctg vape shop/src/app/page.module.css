@@ -1,0 +1,133 @@
+.hero {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.heroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(10, 10, 10, 0.3), rgba(10, 10, 10, 0.9));
+}
+
+.heroContent {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  padding: 2rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.title {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to right, #fff, var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  color: #e0e0e0;
+}
+
+.ctaGroup {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--primary);
+}
+
+.card {
+  background: var(--secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+}
+
+.cardImage {
+  height: 200px;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholderImg {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #333;
+}
+
+.cardContent {
+  padding: 1.5rem;
+}
+
+.price {
+  font-size: 1.25rem;
+  color: var(--primary);
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.link {
+  font-size: 0.9rem;
+  color: var(--accent);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+}

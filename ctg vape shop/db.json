@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "id": "GbyjK5dLUGzhdQknRKk-m",
+      "email": "ctg vapeshop",
+      "passwordHash": "$2b$10$rETcCvv3LfxtRXUOoLgBv.NBUGdIr9J/N29FE/0mPpa2Lrq2.q39K"
+    }
+  ],
+  "products": [
+    {
+      "id": "hpc3LXZM0aGkpXIPfFkm1",
+      "name": "Cool Mint",
+      "description": "Refreshing mint flavour",
+      "price": 500,
+      "stock": 50,
+      "category": "Flavour",
+      "image": "/images/mint.jpg",
+      "createdAt": "2026-01-01T11:47:22.853Z",
+      "updatedAt": "2026-01-01T11:47:22.853Z"
+    },
+    {
+      "id": "6mQ3-T_QV0lZsDd11Ig8O",
+      "name": "Vape Pro X",
+      "description": "Advanced device for pros",
+      "price": 3500,
+      "stock": 10,
+      "category": "Device",
+      "image": "/images/device.jpg",
+      "createdAt": "2026-01-01T11:47:22.854Z",
+      "updatedAt": "2026-01-01T11:47:22.854Z"
+    }
+  ],
+  "branches": [
+    {
+      "id": "4JKnbzPG9aC_vutP-73uY",
+      "name": "Main Branch",
+      "address": "123 Vape St, CTG",
+      "contact": "+880 123 456 789"
+    },
+    {
+      "id": "jZqFzd3wwyfoiWAroW80f",
+      "name": "City Center",
+      "address": "456 City Mall, CTG",
+      "contact": "+880 987 654 321"
+    },
+    {
+      "id": "AP4FifZkVCJXR9In49pf5",
+      "name": "Beach View",
+      "address": "789 Beach Rd, CTG",
+      "contact": "+880 111 222 333"
+    }
+  ]
+}

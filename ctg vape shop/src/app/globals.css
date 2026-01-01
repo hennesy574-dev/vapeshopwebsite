@@ -1,0 +1,105 @@
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  
+  --primary: #d4af37; /* Metallic Gold */
+  --primary-hover: #b5952f;
+  
+  --secondary: #1a1a1a;
+  --border: #333333;
+  --muted: #888;
+  
+  --accent: #00e5ff; /* Cyan accent */
+  
+  --danger: #ef4444;
+  
+  --radius: 8px;
+  --header-height: 70px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #000;
+}
+.btn-primary:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background: transparent;
+}
+.btn-outline:hover {
+  background: var(--primary);
+  color: #000;
+}
+
+/* Grid System */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+@media (max-width: 768px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+}
